@@ -1,6 +1,6 @@
 CCC=g++
 
-TARGET=sm_naive
+TARGET=tm_brute_force
 
 all: src/${TARGET}.cpp
 	$(CCC) -g -Wall -o ${TARGET} src/${TARGET}.cpp
