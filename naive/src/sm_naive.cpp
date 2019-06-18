@@ -10,11 +10,11 @@ int main (int argc, char** argv) {
 
   for (size_t i = 0; i <= sequence.length()-pattern.length(); ++i) {
     if ( check_match(i, pattern, sequence) ) {
-      std::cout << "Match Found at index " << i << std::endl;
+      std::cout << i << std::endl;
       return 0;
     }
   }
-  std::cout << "Match not found" << std::endl;
+  std::cout << -1 << std::endl;
   return 0;
 }
 
